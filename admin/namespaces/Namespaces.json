@@ -54,5 +54,13 @@
     "generatedNamespace" : false,
     "patternCollection" : false,
     "secureCollection" : false
+  },
+  "http://planqk.de/s1/demo/servicetemplates" : {
+    "namespace" : "http://planqk.de/s1/demo/servicetemplates",
+    "prefix" : "steIgeneral1",
+    "readableName" : "",
+    "generatedNamespace" : false,
+    "patternCollection" : false,
+    "secureCollection" : false
   }
 }
