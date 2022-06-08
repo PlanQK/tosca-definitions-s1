@@ -7,6 +7,14 @@
     "patternCollection" : false,
     "secureCollection" : false
   },
+  "http://planqk.de/s1/artifacttemplates" : {
+    "namespace" : "http://planqk.de/s1/artifacttemplates",
+    "prefix" : "ateIgeneral",
+    "readableName" : "",
+    "generatedNamespace" : false,
+    "patternCollection" : false,
+    "secureCollection" : false
+  },
   "http://www.example.org" : {
     "namespace" : "http://www.example.org",
     "prefix" : "ex",
