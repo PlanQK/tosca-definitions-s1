@@ -9,7 +9,7 @@
                         <ContainerPort>8050</ContainerPort>
                         <ContainerID/>
                         <ContainerIP/>
-                        <ImageID/>
+                        <ImageID>ghcr.io/planqk/qps-app:1.0.7</ImageID>
                         <ContainerMountPath/>
                         <HostMountFiles/>
                         <PrivilegedMode/>
