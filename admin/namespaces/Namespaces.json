@@ -15,6 +15,14 @@
     "patternCollection" : false,
     "secureCollection" : false
   },
+  "http://planqk.de/s1/nodetypes" : {
+    "namespace" : "http://planqk.de/s1/nodetypes",
+    "prefix" : "ntyIgeneral",
+    "readableName" : "",
+    "generatedNamespace" : false,
+    "patternCollection" : false,
+    "secureCollection" : false
+  },
   "http://docs.oasis-open.org/tosca/ns/2011/12" : {
     "namespace" : "http://docs.oasis-open.org/tosca/ns/2011/12",
     "prefix" : "tosca",

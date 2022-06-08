@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org" targetNamespace="http://planqk.de/s1/nodetypes" id="ntyIgeneral-PlanqkServicePlatform_w1-wip1">
+    <NodeType name="PlanqkServicePlatform_w1-wip1" abstract="no" final="no" targetNamespace="http://planqk.de/s1/nodetypes">
+        <winery:PropertiesDefinition elementname="PlanqkServicePlatform_w1-wip1" namespace="http://planqk.de/s1/nodetypes">
+            <winery:properties>
+                <winery:defaultValue>https://platform.planqk.de/</winery:defaultValue>
+                <winery:derivedFromStatus>SELF</winery:derivedFromStatus>
+                <winery:derivedFromType xmlns:ntyIgeneral="http://planqk.de/s1/nodetypes">ntyIgeneral:PlanqkServicePlatform_w1-wip1</winery:derivedFromType>
+                <winery:description>URL to PlanQK platform</winery:description>
+                <winery:key>url</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+        </winery:PropertiesDefinition>
+    </NodeType>
+</Definitions>
