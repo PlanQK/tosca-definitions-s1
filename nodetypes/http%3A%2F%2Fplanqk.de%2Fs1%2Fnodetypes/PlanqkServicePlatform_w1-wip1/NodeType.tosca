@@ -3,11 +3,25 @@
     <NodeType name="PlanqkServicePlatform_w1-wip1" abstract="no" final="no" targetNamespace="http://planqk.de/s1/nodetypes">
         <winery:PropertiesDefinition elementname="PlanqkServicePlatform_w1-wip1" namespace="http://planqk.de/s1/nodetypes">
             <winery:properties>
-                <winery:defaultValue>https://platform.planqk.de/</winery:defaultValue>
+                <winery:defaultValue>https://platform.planqk.de</winery:defaultValue>
                 <winery:derivedFromStatus>SELF</winery:derivedFromStatus>
                 <winery:derivedFromType xmlns:ntyIgeneral="http://planqk.de/s1/nodetypes">ntyIgeneral:PlanqkServicePlatform_w1-wip1</winery:derivedFromType>
-                <winery:description>URL to PlanQK platform</winery:description>
-                <winery:key>url</winery:key>
+                <winery:description>URL to the PlanQK Platform</winery:description>
+                <winery:key>BaseUrl</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:derivedFromStatus>SELF</winery:derivedFromStatus>
+                <winery:derivedFromType xmlns:ntyIgeneral="http://planqk.de/s1/nodetypes">ntyIgeneral:PlanqkServicePlatform_w1-wip1</winery:derivedFromType>
+                <winery:description>PlanQK Platform username to authenticate with</winery:description>
+                <winery:key>Username</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:derivedFromStatus>SELF</winery:derivedFromStatus>
+                <winery:derivedFromType xmlns:ntyIgeneral="http://planqk.de/s1/nodetypes">ntyIgeneral:PlanqkServicePlatform_w1-wip1</winery:derivedFromType>
+                <winery:description>Corresponding password of the given username</winery:description>
+                <winery:key>Password</winery:key>
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
         </winery:PropertiesDefinition>
