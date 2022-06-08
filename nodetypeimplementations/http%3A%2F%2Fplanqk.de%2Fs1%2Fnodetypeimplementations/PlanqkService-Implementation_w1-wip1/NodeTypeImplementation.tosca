@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org" targetNamespace="http://planqk.de/s1/nodetypeimplementations" id="ntyiIgeneral-PlanqkService-Implementation_w1-wip1">
+    <NodeTypeImplementation xmlns:ntyIgeneral="http://planqk.de/s1/nodetypes" targetNamespace="http://planqk.de/s1/nodetypeimplementations" name="PlanqkService-Implementation_w1-wip1" abstract="no" final="no" nodeType="ntyIgeneral:PlanqkService_w1-wip1">
+        <ImplementationArtifacts>
+            <ImplementationArtifact xmlns:otatyIgeneral="http://opentosca.org/artifacttypes" xmlns:ateIgeneral="http://planqk.de/s1/artifacttemplates" name="all" interfaceName="http://opentosca.org/interfaces/lifecycle" operationName="" artifactType="otatyIgeneral:WAR-Java17" artifactRef="ateIgeneral:PlanqkService-Implementation_w1-wip1"/>
+        </ImplementationArtifacts>
+    </NodeTypeImplementation>
+</Definitions>

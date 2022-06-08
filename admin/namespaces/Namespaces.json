@@ -78,5 +78,13 @@
     "generatedNamespace" : false,
     "patternCollection" : false,
     "secureCollection" : false
+  },
+  "http://planqk.de/s1/nodetypeimplementations" : {
+    "namespace" : "http://planqk.de/s1/nodetypeimplementations",
+    "prefix" : "ntyiIgeneral",
+    "readableName" : "",
+    "generatedNamespace" : false,
+    "patternCollection" : false,
+    "secureCollection" : false
   }
 }

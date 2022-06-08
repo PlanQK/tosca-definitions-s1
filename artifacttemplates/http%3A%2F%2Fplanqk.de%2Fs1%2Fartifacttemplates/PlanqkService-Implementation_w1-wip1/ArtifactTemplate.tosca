@@ -3,10 +3,13 @@
     <ArtifactTemplate xmlns:otatyIgeneral="http://opentosca.org/artifacttypes" name="PlanqkService-Implementation_w1-wip1" type="otatyIgeneral:WAR-Java17" id="PlanqkService-Implementation_w1-wip1">
         <Properties>
             <properties xmlns="http://opentosca.org/artifacttypes/propertiesdefinition/winery">
-                <ServiceEndpoint/>
-                <PortType/>
-                <InvocationType/>
+                <ServiceEndpoint>/de_planqk_s1_artifacttemplates_PlanqkService_InterfacePort</ServiceEndpoint>
+                <PortType>{http://planqk.de/s1/artifacttemplates}de_planqk_s1_artifacttemplates_PlanqkService_Interface</PortType>
+                <InvocationType>SOAP/HTTP</InvocationType>
             </properties>
         </Properties>
+        <ArtifactReferences>
+            <ArtifactReference reference="artifacttemplates/http%253A%252F%252Fplanqk.de%252Fs1%252Fartifacttemplates/PlanqkService-Implementation_w1-wip1/files/de_planqk_s1_artifacttemplates_PlanqkService_Implementation.war"/>
+        </ArtifactReferences>
     </ArtifactTemplate>
 </Definitions>
