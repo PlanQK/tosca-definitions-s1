@@ -24,18 +24,18 @@ public class WebServiceConfig extends WsConfigurerAdapter {
         return new ServletRegistrationBean<>(servlet, "/*");
     }
 
-    @Bean(name = DockerEngineConstants.PORT_TYPE_NAME)
+    @Bean(name = PlanqkServiceConstants.PORT_TYPE_NAME)
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema dockerInterfaceSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-        wsdl11Definition.setPortTypeName(DockerEngineConstants.PORT_TYPE_NAME);
+        wsdl11Definition.setPortTypeName(PlanqkServiceConstants.PORT_TYPE_NAME);
         wsdl11Definition.setLocationUri("/");
-        wsdl11Definition.setTargetNamespace(DockerEngineConstants.NAMESPACE_URI);
+        wsdl11Definition.setTargetNamespace(PlanqkServiceConstants.NAMESPACE_URI);
         wsdl11Definition.setSchema(dockerInterfaceSchema);
         return wsdl11Definition;
     }
 
     @Bean
-    public XsdSchema dockerInterfaceSchema() {
-        return new SimpleXsdSchema(new ClassPathResource(DockerEngineConstants.XSD_NAME));
+    public XsdSchema xsdSchema() {
+        return new SimpleXsdSchema(new ClassPathResource(PlanqkServiceConstants.XSD_NAME));
     }
 }

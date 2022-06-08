@@ -1,7 +1,6 @@
 package de.planqk.s1.artifacttemplates.service;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,11 +8,7 @@ import java.io.OutputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URLConnection;
-
-import com.google.common.io.Files;
-import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
-import org.apache.commons.compress.archivers.tar.TarArchiveOutputStream;
-import org.apache.commons.io.IOUtils;
+import java.nio.file.Files;
 
 public class FileHandler {
 
@@ -24,7 +19,7 @@ public class FileHandler {
             final String[] pathSplit = dockerImageURI.getRawPath().split("/");
             final String fileName = pathSplit[pathSplit.length - 1];
 
-            final File tempDir = Files.createTempDir();
+            final File tempDir = Files.createTempDirectory("planqk-service-").toFile();
             final File tempFile = new File(tempDir, fileName);
 
             downloadFile(dockerImageURI, tempFile);
@@ -50,22 +45,5 @@ public class FileHandler {
                 }
             }
         }
-    }
-
-    protected static File createTempTarFromFile(final File file) {
-        final TarArchiveEntry entry = new TarArchiveEntry(file, file.getName());
-
-        File tarArchive = null;
-        try {
-            tarArchive = File.createTempFile(String.valueOf(System.currentTimeMillis()), ".tar");
-            final TarArchiveOutputStream out = new TarArchiveOutputStream(new FileOutputStream(tarArchive));
-            out.putArchiveEntry(entry);
-            IOUtils.copy(new FileInputStream(file), out);
-            out.closeArchiveEntry();
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-
-        return tarArchive;
     }
 }
